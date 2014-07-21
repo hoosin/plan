@@ -1,0 +1,12 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+margin: 0; padding: 0; font-size:12px;}
+i{ font-style:normal;}
+div{ background:#F5F5F5;   margin-bottom:12px; line-height:24px; padding:0px 6px;}
+.dont{background:#F5F5F5;}
+.done{ background:#929292;color:#FFF;}
+.doing{ background:#EAFFAA;}
+.red{ color:#FF0000;}
+.b5{border:1px #929292 solid; padding:2px 5px 0px 5px;}
+.title {background:#000000;color: #FFFFFF;}
+.confirm{color:red;}
+ 

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-cn" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>今日聚超值</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/css.css">
+</head>
+
+<body ng-controller="project" >
+<div> 
+	<strong class="red">聚超值</strong>
+	| <strong>标记说明：</strong> 
+	<i class="done b5">已完成</i>
+	<i class="dont b5">未开始</i>
+	<i class="doing b5">正在制作</i>
+</div>
+
+<div ng-controller="workMsg"> 
+	<strong>需求跟进</strong>：{{setMsg.pm}} | 
+	<strong>制作跟进</strong>：{{setMsg.f2e}} |
+	<strong>设计跟进</strong>：{{setMsg.designer}} |
+	<strong>协调跟进</strong>：{{setMsg.coordinator}}
+</div>
+
+<div ng-controller="workMsg"> 
+	<strong>设计进度</strong>：<a href="{{setMsg.designerPlan}}" target="_blank">点击</a>
+</div>
+
+<div ng-controller="workMsg"> 
+	<strong>制作注意事项：</strong>
+	<p><strong class="red">项目用的编码是 {{setMsg.charsetMsg}}</strong></p>
+	<p>图片上传路径：{{setMsg.picUrl}}</p>
+	<p>样式表路径：{{setMsg.cssUrl}}</p>
+	<p>背景PSD路径：{{setMsg.psdUrl}}</p>
+</div>
+
+<div class="box">
+	<div class="title"><strong>第一期</strong></div>
+	<div ng-repeat="item in items1">
+		<div class="dont">
+			{{item.time}} <strong>{{item.pageName}}</strong> 
+			[{{item.author}}] 
+			<span class="demo">[<a class="demoLink"  target="_blank" href="{{item.demo}}">预览</a>]</span>
+			<span class="confirm">[{{item.pass}}]</span>
+			<span class="online">[<a class="demoLink"  target="_blank" href="{{item.online}}">线上链接</a>]</span>
+		</div>
+	</div>
+</div>
+
+<div class="box">
+	<div class="title"><strong>第二期</strong></div>
+	<div ng-repeat="item in items1">
+		<div class="dont">
+			{{item.time}} <strong>{{item.pageName}}</strong> 
+			[{{item.author}}] 
+			<span class="demo">[<a class="demoLink"  target="_blank" href="{{item.demo}}">预览</a>]</span>
+			<span class="confirm">[{{item.pass}}]</span>
+			<span class="online">[<a class="demoLink"  target="_blank" href="{{item.online}}">线上链接</a>]</span>
+		</div>
+	</div>
+</div>
+
+<div class="box">
+	<div class="title"><strong>第三期</strong></div>
+	<div ng-repeat="item in items1">
+		<div class="dont">
+			{{item.time}} <strong>{{item.pageName}}</strong> 
+			[{{item.author}}] 
+			<span class="demo">[<a class="demoLink"  target="_blank" href="{{item.demo}}">预览</a>]</span>
+			<span class="confirm">[{{item.pass}}]</span>
+			<span class="online">[<a class="demoLink"  target="_blank" href="{{item.online}}">线上链接</a>]</span>
+		</div>
+	</div>
+</div>
+
+<div class="info"><strong class="red">相关备忘数据：在制作页面时切勿忘记ivy脚本标示、test广告监测标识、计数器代码</strong></div>
+<script type="text/javascript" src="assets/lib/angular.min.js"></script>
+<script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>
+.0
