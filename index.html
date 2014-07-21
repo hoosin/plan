@@ -1,79 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-cn" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>项目进度表</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/css.css">
+</head>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Plan : 基于Angular.js的项目进度模板" />
+<body ng-controller="project" >
+	<div class="container">
+		<div class="head" ng-controller="workMsg">
+	        <div class="middle">
+	            <h1>{{setMsg.project}}</h1>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+	            <div class="status layout-mtb8">
+	            	<dl class="clearfix">
+	            		<dt class="strong">状态说明：</dt>
+	            		<dd><span class="status-icon done">已完成</span></dd>
+						<dd><span class="status-icon dont">未开始</span></dd>
+						<dd><span class="status-icon doing">进行中</span></dd>
+	            	</dl>
+ 	            </div>
 
-    <title>Plan</title>
-  </head>
+ 	            <div class="layout-mtb8" ng-controller="workMsg"> 
+					<ul class="team clearfix">
+						<li><span class="strong">产品跟进</span>：{{setMsg.pm}}</li>
+						<li><span class="strong">前端跟进</span>：{{setMsg.f2e}}</li>
+						<li><span class="strong">视觉跟进</span>：{{setMsg.designer}}</li>
+						<li><span class="strong">协调跟进</span>：{{setMsg.coordinator}}</li>
+					</ul>
+				</div>
 
-  <body>
+				<div class="layout-mtb8" ng-controller="workMsg"> 
+					<span class="strong">视觉进度</span>：<a href="{{setMsg.designerPlan}}" target="_blank">点击</a>
+				</div>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/hoosin/plan">View on GitHub</a>
+				<div class="layout-mtb8" ng-controller="workMsg"> 
+					<span class="strong">制作注意事项：</span>
+					<p><span class="red">项目用的编码是 {{setMsg.charsetMsg}}</span></p>
+					<p>图片上传路径：<code>{{setMsg.picUrl}}</code></p>
+					<p>样式表路径：<code>{{setMsg.cssUrl}}</code></p>
+					<p>背景PSD路径：<code>{{setMsg.psdUrl}}</code></p>
+				</div>
+	        </div>
+	    </div>
+	    <div class="info">
+	    	<div class="middle">
+				<h2>第一期</h2>
+				<div ng-repeat="item in items1">
+					<div class="dont-box">
+						{{item.time}} <span class="strong">{{item.pageName}}</span> 
+						[{{item.author}}] 
+						<span class="demo">[<a class="demoLink"  target="_blank" href="{{item.demo}}">预览</a>]</span>
+						<span class="confirm">[{{item.pass}}]</span>
+						<span class="online">[<a class="demoLink"  target="_blank" href="{{item.online}}">线上链接</a>]</span>
+						<span class="{{item.statu}}"><em class="y">已完成</em><em class="j">进行中</em><em class="w">未开始</em></span>
+					</div>
+				</div>
+			</div>
 
-          <h1 id="project_title">Plan</h1>
-          <h2 id="project_tagline">基于Angular.js的项目进度模板</h2>
+			<div class="middle">
+				<h2>第二期</h2>
+				<div ng-repeat="item in items2">
+					<div class="dont-box">
+						{{item.time}} <span class="strong">{{item.pageName}}</span> 
+						[{{item.author}}] 
+						<span class="demo">[<a class="demoLink"  target="_blank" href="{{item.demo}}">预览</a>]</span>
+						<span class="confirm">[{{item.pass}}]</span>
+						<span class="online">[<a class="demoLink"  target="_blank" href="{{item.online}}">线上链接</a>]</span>
+						<span class="{{item.statu}}"><em class="y">已完成</em><em class="j">进行中</em><em class="w">未开始</em></span>
+					</div>
+				</div>
+			</div>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/hoosin/plan/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/hoosin/plan/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+			<div class="middle">
+				<h2>第三期</h2>
+				<div ng-repeat="item in items3">
+					<div class="dont-box">
+						{{item.time}} <span class="strong">{{item.pageName}}</span> 
+						[{{item.author}}] 
+						<span class="demo">[<a class="demoLink"  target="_blank" href="{{item.demo}}">预览</a>]</span>
+						<span class="confirm">[{{item.pass}}]</span>
+						<span class="online">[<a class="demoLink"  target="_blank" href="{{item.online}}">线上链接</a>]</span>
+						<span class="{{item.statu}}"><em class="y">已完成</em><em class="j">进行中</em><em class="w">未开始</em></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="importance middle">
+				<p class="red">相关备忘数据：在前端开发时切勿忘记 test监测标识、统计代码</p>
+			</div>
+		    	
+	    </div>
+
+
+
+		
+
+		
+
+		
+		<div class="foot">
+        <div class="middle">
+            © <a href="https://github.com/hoosin/plan">angular plan</a>
+        </div>
     </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Plan maintained by <a href="https://github.com/hoosin">hoosin</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+	</div>
+<script type="text/javascript" src="assets/lib/angular.min.js"></script>
+<script type="text/javascript" src="assets/js/app.js"></script>
+</body>
 </html>
