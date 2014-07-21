@@ -1,6 +1,6 @@
 function workMsg($scope) {
 	$scope.setMsg = {
-		project:'报表平台',
+		project:'报表平台项目',
 		pm: '鲍佩琪 杜建荣', //需求
 		f2e:'白舜', //前端
 		designer:'李德武', //设计
@@ -9,7 +9,8 @@ function workMsg($scope) {
 		charsetMsg:'UTF-8', //项目编码
 		picUrl:'2014/test/images/', //图片素材
 		cssUrl:'svn/data/2014/test/', //css路径
-		psdUrl:'svn/test/psd/' //psd路径
+		psdUrl:'svn/test/psd/', //psd路径
+		footMsg:'在前端开发时切勿忘记 test监测标识、统计代码', //底部相关备忘数据
 	};
 }
 
