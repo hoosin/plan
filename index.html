@@ -7,73 +7,104 @@
 </head>
 
 <body ng-controller="project" >
-	<div> 
-		<strong class="red">Foxmail报表平台</strong>
-		| <strong>标记说明：</strong> 
-		<i class="done b5">已完成</i>
-		<i class="dont b5">未开始</i>
-		<i class="doing b5">正在制作</i>
-	</div>
+	<div class="container">
+		<div class="head" ng-controller="workMsg">
+	        <div class="middle">
+	            <h1>{{setMsg.project}}</h1>
 
-	<div ng-controller="workMsg"> 
-		<strong>产品跟进</strong>：{{setMsg.pm}} | 
-		<strong>前端跟进</strong>：{{setMsg.f2e}} |
-		<strong>视觉跟进</strong>：{{setMsg.designer}} |
-		<strong>协调跟进</strong>：{{setMsg.coordinator}}
-	</div>
+	            <div class="status layout-mtb8">
+	            	<dl class="clearfix">
+	            		<dt class="strong">状态说明：</dt>
+	            		<dd><span class="status-icon done">已完成</span></dd>
+						<dd><span class="status-icon dont">未开始</span></dd>
+						<dd><span class="status-icon doing">进行中</span></dd>
+	            	</dl>
+ 	            </div>
 
-	<div ng-controller="workMsg"> 
-		<strong>视觉进度</strong>：<a href="{{setMsg.designerPlan}}" target="_blank">点击</a>
-	</div>
+ 	            <div class="layout-mtb8" ng-controller="workMsg"> 
+					<ul class="team clearfix">
+						<li><span class="strong">产品跟进</span>：{{setMsg.pm}}</li>
+						<li><span class="strong">前端跟进</span>：{{setMsg.f2e}}</li>
+						<li><span class="strong">视觉跟进</span>：{{setMsg.designer}}</li>
+						<li><span class="strong">协调跟进</span>：{{setMsg.coordinator}}</li>
+					</ul>
+				</div>
 
-	<div ng-controller="workMsg"> 
-		<strong>制作注意事项：</strong>
-		<p><strong class="red">项目用的编码是 {{setMsg.charsetMsg}}</strong></p>
-		<p>图片上传路径：{{setMsg.picUrl}}</p>
-		<p>样式表路径：{{setMsg.cssUrl}}</p>
-		<p>背景PSD路径：{{setMsg.psdUrl}}</p>
-	</div>
+				<div class="layout-mtb8" ng-controller="workMsg"> 
+					<span class="strong">视觉进度</span>：<a href="{{setMsg.designerPlan}}" target="_blank">点击</a>
+				</div>
 
-	<div class="box">
-		<div class="title"><strong>第一期</strong></div>
-		<div ng-repeat="item in items1">
-			<div class="dont">
-				{{item.time}} <strong>{{item.pageName}}</strong> 
-				[{{item.author}}] 
-				<span class="demo">[<a class="demoLink"  target="_blank" href="{{item.demo}}">预览</a>]</span>
-				<span class="confirm">[{{item.pass}}]</span>
-				<span class="online">[<a class="demoLink"  target="_blank" href="{{item.online}}">线上链接</a>]</span>
+				<div class="layout-mtb8" ng-controller="workMsg"> 
+					<span class="strong">制作注意事项：</span>
+					<p><span class="red">项目用的编码是 {{setMsg.charsetMsg}}</span></p>
+					<p>图片上传路径：<code>{{setMsg.picUrl}}</code></p>
+					<p>样式表路径：<code>{{setMsg.cssUrl}}</code></p>
+					<p>背景PSD路径：<code>{{setMsg.psdUrl}}</code></p>
+				</div>
+	        </div>
+	    </div>
+	    <div class="info">
+	    	<div class="middle">
+				<h2>第一期</h2>
+				<div ng-repeat="item in items1">
+					<div class="dont-box">
+						{{item.time}} <span class="strong">{{item.pageName}}</span> 
+						[{{item.author}}] 
+						<span class="demo">[<a class="demoLink"  target="_blank" href="{{item.demo}}">预览</a>]</span>
+						<span class="confirm">[{{item.pass}}]</span>
+						<span class="online">[<a class="demoLink"  target="_blank" href="{{item.online}}">线上链接</a>]</span>
+						<span class="{{item.statu}}"><em class="y">已完成</em><em class="j">进行中</em><em class="w">未开始</em></span>
+					</div>
+				</div>
 			</div>
-		</div>
-	</div>
 
-	<div class="box">
-		<div class="title"><strong>第二期</strong></div>
-		<div ng-repeat="item in items2">
-			<div class="dont">
-				{{item.time}} <strong>{{item.pageName}}</strong> 
-				[{{item.author}}] 
-				<span class="demo">[<a class="demoLink"  target="_blank" href="{{item.demo}}">预览</a>]</span>
-				<span class="confirm">[{{item.pass}}]</span>
-				<span class="online">[<a class="demoLink"  target="_blank" href="{{item.online}}">线上链接</a>]</span>
+			<div class="middle">
+				<h2>第二期</h2>
+				<div ng-repeat="item in items2">
+					<div class="dont-box">
+						{{item.time}} <span class="strong">{{item.pageName}}</span> 
+						[{{item.author}}] 
+						<span class="demo">[<a class="demoLink"  target="_blank" href="{{item.demo}}">预览</a>]</span>
+						<span class="confirm">[{{item.pass}}]</span>
+						<span class="online">[<a class="demoLink"  target="_blank" href="{{item.online}}">线上链接</a>]</span>
+						<span class="{{item.statu}}"><em class="y">已完成</em><em class="j">进行中</em><em class="w">未开始</em></span>
+					</div>
+				</div>
 			</div>
-		</div>
-	</div>
 
-	<div class="box">
-		<div class="title"><strong>第三期</strong></div>
-		<div ng-repeat="item in items3">
-			<div class="dont">
-				{{item.time}} <strong>{{item.pageName}}</strong> 
-				[{{item.author}}] 
-				<span class="demo">[<a class="demoLink"  target="_blank" href="{{item.demo}}">预览</a>]</span>
-				<span class="confirm">[{{item.pass}}]</span>
-				<span class="online">[<a class="demoLink"  target="_blank" href="{{item.online}}">线上链接</a>]</span>
+			<div class="middle">
+				<h2>第三期</h2>
+				<div ng-repeat="item in items3">
+					<div class="dont-box">
+						{{item.time}} <span class="strong">{{item.pageName}}</span> 
+						[{{item.author}}] 
+						<span class="demo">[<a class="demoLink"  target="_blank" href="{{item.demo}}">预览</a>]</span>
+						<span class="confirm">[{{item.pass}}]</span>
+						<span class="online">[<a class="demoLink"  target="_blank" href="{{item.online}}">线上链接</a>]</span>
+						<span class="{{item.statu}}"><em class="y">已完成</em><em class="j">进行中</em><em class="w">未开始</em></span>
+					</div>
+				</div>
 			</div>
-		</div>
-	</div>
 
-<div class="info"><strong class="red">相关备忘数据：在前端开发时切勿忘记 test监测标识、统计代码</strong></div>
+			<div class="importance middle">
+				<p class="red">相关备忘数据：在前端开发时切勿忘记 test监测标识、统计代码</p>
+			</div>
+		    	
+	    </div>
+
+
+
+		
+
+		
+
+		
+		<div class="foot">
+        <div class="middle">
+            © <a href="https://github.com/hoosin/plan">angular plan</a>
+        </div>
+    </div>
+	</div>
 <script type="text/javascript" src="assets/lib/angular.min.js"></script>
 <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
