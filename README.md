@@ -1,6 +1,8 @@
 plan
 ====
 
+![main](https://raw.githubusercontent.com/hoosin/plan/master/assets/main.jpg)
+
 - **基于Angular.js的项目进度模板**
 - **LIVE DEMO:** [http://hoosin.github.io/plan](http://hoosin.github.io/plan)
 
