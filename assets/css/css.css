@@ -37,10 +37,10 @@ ul, ol,dd,dt,dl,p{ padding: 0px; margin: 0px; }
 .status dt{  float: left; }
 .status dd{ float: left; margin-right: 10px;}
 
-.status-icon{display: inline-block;border: 1px #929292 solid; padding: 0 5px;  color: #fff; border-radius: 2px; font-size: 14px;}
-.done{ background-color: #EAFFAA; color: #333}
-.dont{ background-color: #900b09}
-.doing{ background-color: #62c462}
+.status-icon{display: inline-block; padding: 0 5px;  color: #fff; border-radius: 2px; font-size: 14px;}
+.done{ background-color: #97adac; }
+.dont{ background-color: #ad8976}
+.doing{ background-color: #ec927f}
 .status-icon em{font-style:inherit; display: none;}
 .doing em.j{display: block;}
 .dont em.w{display: block;}
