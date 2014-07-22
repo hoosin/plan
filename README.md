@@ -30,7 +30,7 @@ plan是基于 ```Angular.js``` 静态模板，他无需安装，轻松上手，�
 
 配置 ```assets/js/app.js``` 文件
 
-###workMsg($scope)
+#### workMsg($scope)
 
 - ```project```      项目名称
 - ```pm```           需求
@@ -44,9 +44,9 @@ plan是基于 ```Angular.js``` 静态模板，他无需安装，轻松上手，�
 - ```psdUrl```       psd路径
 - ```footMsg```      底部相关备忘信息
 
-### project($scope)
+#### project($scope)
 
-#### 存储开发者姓名、项目进度状态
+##### 存储开发者姓名、项目进度状态
 
 ```js
 var authors = ['张三','李四','王五'], //开发者姓名
@@ -63,7 +63,7 @@ var authors = ['张三','李四','王五'], //开发者姓名
 	 */ 
 ```
 
-#### item信息 
+##### item信息 
 ```js
 	{
 		author: authors[2],//开发者
@@ -75,7 +75,7 @@ var authors = ['张三','李四','王五'], //开发者姓名
 		statu: status[0] // 进度说明 (详见状态标识说明)
 	},
 ```
-#### 更多angular信息请移步：[https://github.com/zensh/AngularjsTutorial_cn](https://github.com/zensh/AngularjsTutorial_cn)
+##### 更多angular信息请移步：[https://github.com/zensh/AngularjsTutorial_cn](https://github.com/zensh/AngularjsTutorial_cn)
 
 ### 开源许可
 
