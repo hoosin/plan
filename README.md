@@ -63,7 +63,7 @@ var authors = ['张三','李四','王五'], //开发者姓名
 	 */ 
 ```
 
-#### item项目信息 
+#### item信息 
 ```js
 	{
 		author: authors[2],//开发者
