@@ -1,58 +1,41 @@
-
 body { margin: 1.5em; line-height: 1.5em; font-size: 16px; color: #666; background-color: #BBB; font:normal 16px/1.5em "Microsoft YaHei"}
 a { color: #069; }
-h1,h2,h3{color: #000}
+h1,h2,h3{ color: #000}
 h1 { margin: 0; font-size: 2em; line-height: 2em; }
 h2 { margin: 1em 0 0 0; font-size: 1.5em; line-height: 2em; font-family: "Microsoft YaHei"}
- 
-pre { margin: 1.5em 0 0 0 !important; padding: 0.75em !important; }
-{ list-style: none; }
- 
-ul, ol {list-style: none; }
- 
-
+code{ color: #690}
+ul, ol { list-style: none; }
 ul, ol,dd,dt,dl,p{ padding: 0px; margin: 0px; }
 
-/**
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
 .clearfix:before,
 .clearfix:after { content: " "; /* 1 */
     display: table; /* 2 */}
-
 .clearfix:after { clear: both; }
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
 .clearfix { *zoom: 1; }
 
-.status dt{  float: left; }
-.status dd{ float: left; margin-right: 10px;}
+.wrap { overflow: hidden; }
 
-.status-icon{display: inline-block; padding: 0 5px;  color: #fff; border-radius: 2px; font-size: 14px;}
+.status dt{ float: left; }
+.status dd{ float: left; margin-right: 10px; }
+.status-icon{ display: inline-block; padding: 0 5px; color: #fff; border-radius: 2px; font-size: 14px; }
 .done{ background-color: #97adac; }
 .dont{ background-color: #ad8976}
 .doing{ background-color: #ec927f}
-.status-icon em{font-style:inherit; display: none;}
-.doing em.j{display: block;}
-.dont em.w{display: block;}
-.done em.y{display: block;}
+.status-icon em{ font-style:inherit; display: none; }
+.doing em.j{ display: block; }
+.dont em.w{ display: block; }
+.done em.y{ display: block; }
 
-.layout-mtb8{margin: 8px 0;}
-.layout-mb8{margin-bottom: 8px;}
-.red{color: #FF0000}
-code{color: #690}
+.layout-mtb8{ margin: 8px 0; }
+.layout-mb8{ margin-bottom: 8px; }
+.red{ color: #FF0000}
 
-.strong{font-weight: 800; color: #333}
-.team li{float: left; margin-right: 15px;}
+.dont-box { margin-bottom: 10px; background: #EEE; font-size: 14px; padding: 5px; }
+.importance{ border-top: 1px #000 solid; margin-top: 20px; padding-top: 20px; }
+.none{ display: none}
+
+.strong{ font-weight: 800; color: #333}
+.team li{ float: left; margin-right: 15px; }
 
 .invisible { position: absolute !important; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px); *clip: rect(1px 1px 1px 1px); /* IE6, IE7 */}
 .middle { max-width: 960px; margin: 0 auto; overflow: hidden; }
@@ -66,14 +49,9 @@ code{color: #690}
 .info .button-group { display: block; margin: 0 auto; padding: 4px; height: 40px; text-align: center; border-bottom: none; }
 .info .button-container { text-align: center; }
 
-.wrap { overflow: hidden; }
+
 
 /* foot */
 .foot { padding: 1em; color: #999; }
 .foot a { color: #999; text-decoration: none; }
 
-.dont-box{margin-bottom: 10px; background: #EEE; font-size: 14px; padding: 5px;}
-
- .importance{border-top: 1px #000 solid; margin-top: 20px; padding-top: 20px;}
-
- .none{display: none}
