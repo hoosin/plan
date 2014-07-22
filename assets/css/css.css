@@ -30,7 +30,7 @@ ul, ol,dd,dt,dl,p{ padding: 0px; margin: 0px; }
 .layout-mb8{ margin-bottom: 8px; }
 .red{ color: #FF0000}
 
-.dont-box { margin-bottom: 10px; background: #EEE; font-size: 14px; padding: 5px; }
+.dont-box { margin-bottom: 10px; background: #EEE; font-size: 14px; padding: 5px 10px; border-radius: 3px;}
 .importance{ border-top: 1px #000 solid; margin-top: 20px; padding-top: 20px; }
 .none{ display: none}
 
