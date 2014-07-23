@@ -10,15 +10,13 @@
 	<div class="container">
 		<div class="head" ng-controller="workMsg">
 	        <div class="middle">
-	            <h1>{{setMsg.project}}</h1>
-
+	            <h1><span class="control">{{setMsg.project}}</span></h1>
 	            <div class="status layout-mtb8">
 	            	<dl class="clearfix">
 	            		<dt class="strong">状态说明：</dt>
 	            		<dd><span class="status-icon done">已完成</span></dd>
 						<dd><span class="status-icon dont">未开始</span></dd>
 						<dd><span class="status-icon doing">进行中</span></dd>
-						
 						<dd><span class="status-icon nopass">未确认</span></dd>
 						<dd><span class="status-icon affirm">已确认</span></dd>
 	            	</dl>
@@ -26,10 +24,10 @@
 
  	            <div class="layout-mtb8" ng-controller="workMsg"> 
 					<ul class="team clearfix">
-						<li><span class="strong">产品跟进</span>：{{setMsg.pm}}</li>
-						<li><span class="strong">前端跟进</span>：{{setMsg.f2e}}</li>
-						<li><span class="strong">视觉跟进</span>：{{setMsg.designer}}</li>
-						<li><span class="strong">协调跟进</span>：{{setMsg.coordinator}}</li>
+						<li><span class="strong">产品跟进</span>：<span class="control">{{setMsg.pm}}</span></li>
+						<li><span class="strong">前端跟进</span>：<span class="control">{{setMsg.f2e}}</span></li>
+						<li><span class="strong">视觉跟进</span>：<span class="control">{{setMsg.designer}}</span></li>
+						<li><span class="strong">协调跟进</span>：<span class="control">{{setMsg.coordinator}}</span></li>
 					</ul>
 				</div>
 
@@ -39,16 +37,16 @@
 
 				<div class="layout-mtb8" ng-controller="workMsg"> 
 					<span class="strong">前端注意事项：</span>
-					<p><span class="red">项目用的编码是 {{setMsg.charsetMsg}}</span></p>
-					<p>图片上传路径：<code>{{setMsg.picUrl}}</code></p>
-					<p>样式表路径：<code>{{setMsg.cssUrl}}</code></p>
-					<p>背景PSD路径：<code>{{setMsg.psdUrl}}</code></p>
+					<p><span class="red">项目用的编码是 <span class="control">{{setMsg.charsetMsg}}</span></span></p>
+					<p>图片上传路径：<span class="control"><code>{{setMsg.picUrl}}</code></span></p>
+					<p>样式表路径：<span class="control"><code>{{setMsg.cssUrl}}</code></span></p>
+					<p>背景PSD路径：<span class="control"><code>{{setMsg.psdUrl}}</code></span></p>
 				</div>
 	        </div>
 	    </div>
 	    <div class="info">
 	    	<div class="middle">
-				<h2 class="title" ng-controller="project">{{itemTit[0].title}}</h2>
+				<h2 class="control" ng-controller="project">{{itemTit[0].title}}</h2>
 				<div ng-repeat="item in items1">
 					<div class="dont-box">
 						{{item.time}} <span class="strong">{{item.pageName}}</span> 
@@ -67,7 +65,7 @@
 			</div>
 
 			<div class="middle">
-				<h2 class="title" ng-controller="project">{{itemTit[1].title}}</h2>
+				<h2 class="control" ng-controller="project">{{itemTit[1].title}}</h2>
 				<div ng-repeat="item in items2">
 					<div class="dont-box">
 						{{item.time}} <span class="strong">{{item.pageName}}</span> 
@@ -86,7 +84,7 @@
 			</div>
 
 			<div class="middle">
-				<h2 class="title" ng-controller="project">{{itemTit[2].title}}</h2>
+				<h2 class="control" ng-controller="project">{{itemTit[2].title}}</h2>
 				<div ng-repeat="item in items3">
 					<div class="dont-box">
 						{{item.time}} <span class="strong">{{item.pageName}}</span> 
@@ -105,7 +103,7 @@
 			</div>
 
 			<div class="importance middle" ng-controller="workMsg">
-				<p class="red">相关备忘数据：{{setMsg.footMsg}}</p>
+				<p class="red">相关备忘数据：<span class="control">{{setMsg.footMsg}}</span></p>
 			</div>
 	    </div>
 
