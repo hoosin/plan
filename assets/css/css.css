@@ -21,10 +21,11 @@ ul, ol,dd,dt,dl,p{ padding: 0px; margin: 0px; }
 .done{ background-color: #97adac; }
 .dont{ background-color: #ad8976}
 .doing{ background-color: #ec927f}
+.affirm{background-color: #9DADD6}
+.nopass{background-color: #535347}
 .status-icon em{ font-style:inherit; display: none; }
-.doing em.j{ display: block; }
-.dont em.w{ display: block; }
-.done em.y{ display: block; }
+.doing em.j,.dont em.w,.done em.y,.nopass em.n,.affirm em.p{ display: block; }
+
 
 .layout-mtb8{ margin: 8px 0; }
 .layout-mb8{ margin-bottom: 8px; }
