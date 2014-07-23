@@ -69,10 +69,10 @@ function project($scope) {
 // 当链接为空，隐藏按钮
 window.onload = function() {
 	var dl = document.getElementsByClassName('demoLink'),
-		tit = document.getElementsByClassName('title');
+		control = document.getElementsByClassName('control');
 
-	for (var i = 0; i < tit.length; i++) {
-		tit[i].innerHTML == '' ? tit[i].parentNode.style.display = 'none' : tit[i].parentNode.style.display = 'block';
+	for (var i = 0; i < control.length; i++) {
+		control[i].innerHTML == '' ? control[i].parentNode.style.display = 'none' : control[i].parentNode.style.display = 'block';
 	};
 
 	for (var i = 0; i < dl.length; i++) {
