@@ -30,6 +30,8 @@ plan是基于 ```Angular.js``` 静态模板，他无需安装，轻松上手，�
 
 配置 ```assets/js/app.js``` 文件
 
+
+
 #### workMsg($scope)
 
 - ```project```      项目名称
@@ -43,6 +45,10 @@ plan是基于 ```Angular.js``` 静态模板，他无需安装，轻松上手，�
 - ```cssUrl```       css路径
 - ```psdUrl```       psd路径
 - ```footMsg```      底部相关备忘信息
+
+##### control 控制
+
+```.control``` 字段为空，不显示当前项
 
 #### project($scope)
 
@@ -68,7 +74,6 @@ var authors = ['张三','李四','王五'], //开发者姓名
 
 
 当二级项目标题为空，不显示项目排期列表
-
 
 
 ```js
