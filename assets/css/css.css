@@ -24,7 +24,7 @@ ul, ol,dd,dt,dl,p{ padding: 0px; margin: 0px; }
 .affirm{background-color: #9DADD6}
 .nopass{background-color: #535347}
 .status-icon em{ font-style:inherit; display: none; }
-.doing em.j,.dont em.w,.done em.y,.nopass em.n,.affirm em.p{ display: block; }
+.doing em.j,.dont em.w,.done em.y,.nopass em.n,.affirm em.p{ display: inline; }
 
 
 .layout-mtb8{ margin: 8px 0; }

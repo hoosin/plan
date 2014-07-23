@@ -27,7 +27,13 @@ function project($scope) {
 		 * status[4] == 未确认
 		 * status[5] == 已确认
 		 * 
-		 */ 
+		 */
+		
+	$scope.itemTit=[
+		{title:'第一期'},
+		{title:'第二期'},
+		{title:''}
+	] 
 
 	$scope.items1=[
 		{author:authors[0],time:'(7.17-21(3))',pageName:'首页',demo:'http://www.qq.com/',online:'',statu:status[1]},
@@ -62,10 +68,16 @@ function project($scope) {
 
 // 当链接为空，隐藏按钮
 window.onload = function() {
-	var dl = document.getElementsByClassName('demoLink');
-	for (var i = 0; i < dl.length; i++) {
-		if (dl[i].getAttribute('href') == '') {
-			dl[i].parentNode.style.display = 'none';
-		};
+	var dl = document.getElementsByClassName('demoLink'),
+		tit = document.getElementsByClassName('title');
+
+	for (var i = 0; i < tit.length; i++) {
+		tit[i].innerHTML == '' ? tit[i].parentNode.style.display = 'none' : tit[i].parentNode.style.display = 'block';
 	};
+
+	for (var i = 0; i < dl.length; i++) {
+		dl[i].getAttribute('href') == '' ? dl[i].parentNode.style.display = 'none' : dl[i].parentNode.style.display = 'inline';
+
+	};
+
 }

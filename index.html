@@ -48,7 +48,7 @@
 	    </div>
 	    <div class="info">
 	    	<div class="middle">
-				<h2>第一期</h2>
+				<h2 class="title" ng-controller="project">{{itemTit[0].title}}</h2>
 				<div ng-repeat="item in items1">
 					<div class="dont-box">
 						{{item.time}} <span class="strong">{{item.pageName}}</span> 
@@ -67,7 +67,7 @@
 			</div>
 
 			<div class="middle">
-				<h2>第二期</h2>
+				<h2 class="title" ng-controller="project">{{itemTit[1].title}}</h2>
 				<div ng-repeat="item in items2">
 					<div class="dont-box">
 						{{item.time}} <span class="strong">{{item.pageName}}</span> 
@@ -86,7 +86,7 @@
 			</div>
 
 			<div class="middle">
-				<h2>第三期</h2>
+				<h2 class="title" ng-controller="project">{{itemTit[2].title}}</h2>
 				<div ng-repeat="item in items3">
 					<div class="dont-box">
 						{{item.time}} <span class="strong">{{item.pageName}}</span> 
