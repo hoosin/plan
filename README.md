@@ -64,16 +64,32 @@ var authors = ['张三','李四','王五'], //开发者姓名
 	 */ 
 ```
 
-##### item信息 
+##### 项目二级标题
+
+
+当二级项目标题为空，不显示项目排期列表
+
+
+
 ```js
-	{
-		author: authors[2],//开发者
-		time: '(8.1-1(1))',//需求排期
-		pageName: '页面',//页面名称
-		demo: '', //线上地址 (为空时不显示)
-		online: '', //线上地址 (为空时不显示)
-		statu: status[0] // 进度说明 (详见状态标识说明)
-	},
+$scope.itemTit=[
+	{title:'第一期'},
+	{title:'第二期'},
+	{title:''}
+] 
+```
+
+##### item信息 
+
+```js
+{
+	author: authors[2],//开发者
+	time: '(8.1-1(1))',//需求排期
+	pageName: '页面',//页面名称
+	demo: '', //线上地址 (为空时不显示)
+	online: '', //线上地址 (为空时不显示)
+	statu: status[0] // 进度说明 (详见状态标识说明)
+},
 ```
 ##### 更多angular信息请移步：[https://github.com/zensh/AngularjsTutorial_cn](https://github.com/zensh/AngularjsTutorial_cn)
 
