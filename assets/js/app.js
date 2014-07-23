@@ -16,7 +16,7 @@ function workMsg($scope) {
 
 function project($scope) {
 	var authors = ['张三','李四','王五'],
-		status = ['none','status-icon done','status-icon dont','status-icon doing'];
+		status = ['none','done','dont','doing','nopass','affirm'];
 
 		/*
 		 * 状态标识说明
@@ -24,6 +24,8 @@ function project($scope) {
 		 * status[1] == 已完成
 		 * status[2] == 未开始
 		 * status[3] == 进行中
+		 * status[4] == 未确认
+		 * status[5] == 已确认
 		 * 
 		 */ 
 
@@ -37,7 +39,7 @@ function project($scope) {
 	$scope.items2=[
 		{author:authors[2],time:'(7.24-24(1))',pageName:'页面',demo:'',online:'',statu:status[3]},
 		{author:authors[2],time:'(7.25-29(5))',pageName:'页面',demo:'',online:'',statu:status[0]},
-		{author:authors[2],time:'(7.28-29(2))',pageName:'首页',demo:'http://www.qq.com/',online:'http://www.qq.com/',statu:status[2]},
+		{author:authors[2],time:'(7.28-29(2))',pageName:'首页',demo:'http://www.qq.com/',online:'http://www.qq.com/',statu:status[5]},
 		{author:authors[2],time:'(7.28-29(2))',pageName:'页面',demo:'',online:'',statu:status[0]},
 		{author:authors[2],time:'(7.30-31(2))',pageName:'页面',demo:'',online:'',statu:status[1]},
 		{author:authors[2],time:'(7.30-31(2))',pageName:'页面',demo:'',online:'',statu:status[0]},
