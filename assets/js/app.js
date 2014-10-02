@@ -32,38 +32,22 @@ function project($scope) {
 	$scope.itemTit=[
 		{title:'第一期'},
 		{title:'第二期'},
-		{title:''}
+		{title:'第三期'}
 	] 
 
 	$scope.items1=[
-		{author:authors[0],time:'(7.17-21(3))',pageName:'首页',demo:'http://www.qq.com/',online:'',statu:status[1]},
-		{author:authors[1],time:'(7.18-21(2))',pageName:'页面',demo:'',online:'',statu:status[0]},
-		{author:authors[2],time:'(7.18-21(2))',pageName:'页面',demo:'',online:'',statu:status[2]},
-		{author:authors[0],time:'(7.22-22(1)) ',pageName:'页面',demo:'',online:'',statu:status[1]},
-		{author:authors[0],time:'(7.23-23(1))',pageName:'页面',demo:'',online:'',statu:status[0]}
-	];
+		{author:authors[0],stime:'2014-09-30',etime:'2014-10-01',pageName:'首页',demo:'http://www.qq.com/',online:'',statu:status[1]},
+		{author:authors[0],stime:'2014-03-28',etime:'2014-10-09',pageName:'首页',demo:'http://www.qq.com/',online:'',statu:status[2]},
+		{author:authors[0],stime:'2014-05-28',etime:'2014-10-09',pageName:'首页',demo:'http://www.qq.com/',online:'',statu:status[3]},
+		{author:authors[0],stime:'2014-08-28',etime:'2014-10-09',pageName:'首页',demo:'http://www.qq.com/',online:'',statu:status[4]},
+		{author:authors[0],stime:'2014-07-28',etime:'2014-10-09',pageName:'首页',demo:'http://www.qq.com/',online:'',statu:status[5]},
+		{author:authors[0],stime:'2014-06-28',etime:'2014-10-09',pageName:'首页',demo:'http://www.qq.com/',online:'',statu:status[0]}];
 	$scope.items2=[
-		{author:authors[2],time:'(7.24-24(1))',pageName:'页面',demo:'',online:'',statu:status[3]},
-		{author:authors[2],time:'(7.25-29(5))',pageName:'页面',demo:'',online:'',statu:status[0]},
-		{author:authors[2],time:'(7.28-29(2))',pageName:'首页',demo:'http://www.qq.com/',online:'http://www.qq.com/',statu:status[5]},
-		{author:authors[2],time:'(7.28-29(2))',pageName:'页面',demo:'',online:'',statu:status[0]},
-		{author:authors[2],time:'(7.30-31(2))',pageName:'页面',demo:'',online:'',statu:status[1]},
-		{author:authors[2],time:'(7.30-31(2))',pageName:'页面',demo:'',online:'',statu:status[0]},
-		{author:authors[2],time:'(8.1-1(1))',pageName:'页面',demo:'',online:'',statu:status[0]}
-	];
+		{author:authors[0],stime:'2014-10-03',etime:'2014-10-08',pageName:'首页',demo:'http://www.qq.com/',online:'',statu:status[1]},
+		{author:authors[0],stime:'2014-09-28',etime:'2014-10-09',pageName:'首页',demo:'http://www.qq.com/',online:'',statu:status[1]}];
 	$scope.items3=[
-		{author:authors[2],time:'(8.1-1(1))',pageName:'页面',demo:'',online:'',statu:status[0]},
-		{author:authors[2],time:'(8.5-6(1))',pageName:'页面',demo:'',online:'',statu:status[0]},
-		{author:authors[2],time:'(8.5-5(1))',pageName:'页面',demo:'',online:'',statu:status[3]},
-		{author:authors[2],time:'(8.5-5(1))',pageName:'页面',demo:'',online:'',statu:status[0]},
-		{author:authors[2],time:'(8.5-5(1))',pageName:'页面',demo:'',online:'',statu:status[0]},
-		{author:authors[2],time:'(8.5-5(1))',pageName:'页面',demo:'',online:'',statu:status[2]},
-		{author:authors[2],time:'(8.5-5(1))',pageName:'页面',demo:'',online:'',statu:status[0]},
-		{author:authors[2],time:'(8.5-5(1))',pageName:'页面',demo:'',online:'',statu:status[0]},
-		{author:authors[2],time:'(8.5-5(1))',pageName:'页面',demo:'',online:'',statu:status[0]},
-		{author:authors[2],time:'(8.5-5(1))',pageName:'页面',demo:'',online:'',statu:status[0]},
-		{author:authors[2],time:'(8.5-5(1))',pageName:'页面',demo:'',online:'',statu:status[0]}
-	];	
+		{author:authors[0],stime:'2014-09-30',etime:'2014-10-01',pageName:'首页',demo:'http://www.qq.com/',online:'',statu:status[1]},
+		{author:authors[0],stime:'2014-10-28',etime:'2014-10-31',pageName:'首页',demo:'http://www.qq.com/',online:'',statu:status[1]}];	
 }
 
 // 当链接为空，隐藏按钮
@@ -78,6 +62,24 @@ window.onload = function() {
 	for (var i = 0; i < dl.length; i++) {
 		dl[i].getAttribute('href') == '' ? dl[i].parentNode.style.display = 'none' : dl[i].parentNode.style.display = 'inline';
 
+	};
+
+	// 计算项目时间差
+
+	var controlTime = document.getElementsByClassName('Jtime');
+
+	for (var i = 0; i < controlTime.length; i++) {
+		var endTime = controlTime[i].getAttribute('etime'),
+			startTime = controlTime[i].getAttribute('stime');
+
+		endTime = endTime.replace(/-/g, '/');
+		startTime = startTime.replace(/-/g, '/');
+		endTime = new Date(endTime);
+		startTime = new Date(startTime);
+
+		var times = endTime.getTime() - startTime.getTime();
+		var days = parseInt(times / (1000 * 60 * 60 * 24));
+		controlTime[i].innerHTML = '(' + days + ')';
 	};
 
 }
