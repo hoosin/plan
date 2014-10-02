@@ -32,6 +32,7 @@ function project($scope) {
 	$scope.itemTit=[
 		{title:'第一期'},
 		{title:'第二期'},
+<<<<<<< HEAD
 		{title:'第三期'}
 	] 
 
@@ -48,6 +49,40 @@ function project($scope) {
 	$scope.items3=[
 		{author:authors[0],stime:'2014-09-30',etime:'2014-10-01',pageName:'首页',demo:'http://www.qq.com/',online:'',statu:status[1]},
 		{author:authors[0],stime:'2014-10-28',etime:'2014-10-31',pageName:'首页',demo:'http://www.qq.com/',online:'',statu:status[1]}];	
+=======
+		{title:''}
+	] 
+
+	$scope.items1=[
+		{author:authors[0],time:'(7.17-21(3))',pageName:'首页',demo:'http://www.qq.com/',online:'',statu:status[1]},
+		{author:authors[1],time:'(7.18-21(2))',pageName:'页面',demo:'',online:'',statu:status[0]},
+		{author:authors[2],time:'(7.18-21(2))',pageName:'页面',demo:'',online:'',statu:status[2]},
+		{author:authors[0],time:'(7.22-22(1)) ',pageName:'页面',demo:'',online:'',statu:status[1]},
+		{author:authors[0],time:'(7.23-23(1))',pageName:'页面',demo:'',online:'',statu:status[0]}
+	];
+	$scope.items2=[
+		{author:authors[2],time:'(7.24-24(1))',pageName:'页面',demo:'',online:'',statu:status[3]},
+		{author:authors[2],time:'(7.25-29(5))',pageName:'页面',demo:'',online:'',statu:status[0]},
+		{author:authors[2],time:'(7.28-29(2))',pageName:'首页',demo:'http://www.qq.com/',online:'http://www.qq.com/',statu:status[5]},
+		{author:authors[2],time:'(7.28-29(2))',pageName:'页面',demo:'',online:'',statu:status[0]},
+		{author:authors[2],time:'(7.30-31(2))',pageName:'页面',demo:'',online:'',statu:status[1]},
+		{author:authors[2],time:'(7.30-31(2))',pageName:'页面',demo:'',online:'',statu:status[0]},
+		{author:authors[2],time:'(8.1-1(1))',pageName:'页面',demo:'',online:'',statu:status[0]}
+	];
+	$scope.items3=[
+		{author:authors[2],time:'(8.1-1(1))',pageName:'页面',demo:'',online:'',statu:status[0]},
+		{author:authors[2],time:'(8.5-6(1))',pageName:'页面',demo:'',online:'',statu:status[0]},
+		{author:authors[2],time:'(8.5-5(1))',pageName:'页面',demo:'',online:'',statu:status[3]},
+		{author:authors[2],time:'(8.5-5(1))',pageName:'页面',demo:'',online:'',statu:status[0]},
+		{author:authors[2],time:'(8.5-5(1))',pageName:'页面',demo:'',online:'',statu:status[0]},
+		{author:authors[2],time:'(8.5-5(1))',pageName:'页面',demo:'',online:'',statu:status[2]},
+		{author:authors[2],time:'(8.5-5(1))',pageName:'页面',demo:'',online:'',statu:status[0]},
+		{author:authors[2],time:'(8.5-5(1))',pageName:'页面',demo:'',online:'',statu:status[0]},
+		{author:authors[2],time:'(8.5-5(1))',pageName:'页面',demo:'',online:'',statu:status[0]},
+		{author:authors[2],time:'(8.5-5(1))',pageName:'页面',demo:'',online:'',statu:status[0]},
+		{author:authors[2],time:'(8.5-5(1))',pageName:'页面',demo:'',online:'',statu:status[0]}
+	];	
+>>>>>>> bd23a734e830b34f064c93f26851261bec90706f
 }
 
 // 当链接为空，隐藏按钮
@@ -64,6 +99,7 @@ window.onload = function() {
 
 	};
 
+<<<<<<< HEAD
 	// 计算项目时间差
 
 	var controlTime = document.getElementsByClassName('Jtime');
@@ -82,4 +118,6 @@ window.onload = function() {
 		controlTime[i].innerHTML = '(' + days + ')';
 	};
 
+=======
+>>>>>>> bd23a734e830b34f064c93f26851261bec90706f
 }
