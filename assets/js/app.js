@@ -79,7 +79,7 @@ window.onload = function() {
 		startTime = new Date(startTime);
 
 		var times = endTime.getTime() - startTime.getTime();
-		var days = parseInt(times / (1000 * 60 * 60 * 24));
+		var days = parseInt(times / (1000 * 60 * 60 * 24))+1;
 		controlTime[i].innerHTML = '(' + '<span class="strong">'+days+'</span>' + ')';
 	};
 
