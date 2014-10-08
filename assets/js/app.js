@@ -51,7 +51,7 @@ function project($scope) {
 
 }
 
-// 当链接为空，隐藏按钮
+// js main
 window.onload = function() {
 	var dl = document.getElementsByClassName('demoLink'),
 		control = document.getElementsByClassName('control');
@@ -80,7 +80,7 @@ window.onload = function() {
 
 		var times = endTime.getTime() - startTime.getTime();
 		var days = parseInt(times / (1000 * 60 * 60 * 24));
-		controlTime[i].innerHTML = '(' + days + ')';
+		controlTime[i].innerHTML = '(' + '<span class="strong">'+days+'</span>' + ')';
 	};
 
 }
