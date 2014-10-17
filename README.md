@@ -8,13 +8,13 @@ plan
 
 - **LIVE DEMO:** [http://hoosin.github.io/plan](http://hoosin.github.io/plan)
 
-### 1、模板介绍
+### 模板介绍
 
 我在团队项目的时候，通常会建立一个静态的 ```html``` 制定项目排期计划，以便于更好的协作。考虑到项目的庞大，传统的 ```html``` 方式往往我们会让我们填的晕头转向，刚好 ```Angular.js``` 有套模板解决方案 ，图个一劳永逸，写此模板。
 
 plan是基于 ```Angular.js``` 的一套静态模板，他无需安装，轻松上手，你只需配置 ``` app.js ``` 即可，无需理会繁琐的 ```HTML``` 代码。
 
-### 2、代码仓库
+### 代码仓库
 
 ```
 .
@@ -27,7 +27,7 @@ plan是基于 ```Angular.js``` 的一套静态模板，他无需安装，轻松�
      └── js       --- js file
 ```
 
-### 3、配置说明
+### 配置说明
 
 配置 ```assets/js/app.js``` 文件
 
@@ -95,7 +95,7 @@ $scope.itemTit=[
 },
 ```
 
-### 4、单元测试  
+### 单元测试  
 
 ```
 $ git clone https://github.com/hoosin/plan.git
@@ -105,7 +105,7 @@ $ cd plan
 
 ##### 更多angular信息请移步：[https://github.com/zensh/AngularjsTutorial_cn](https://github.com/zensh/AngularjsTutorial_cn)
 
-### 4、开源许可
+### 开源许可
 
 Copyright (c) 2014 hoosin, contributors.
 Released under the ,  [licenses](https://raw.githubusercontent.com/hoosin/plan/master/LICENSE)
