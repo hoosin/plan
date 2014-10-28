@@ -1,5 +1,5 @@
 
-![](http://www.easyicon.net/api/resize_png_new.php?id=1097043&size=32) plan  
+![](http://www.easyicon.net/api/resize_png_new.php?id=1097043&size=24) plan  
 ====
 
 静态的项目排期模板，基于Angular.js 
