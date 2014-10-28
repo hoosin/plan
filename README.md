@@ -1,10 +1,10 @@
-plan
+
+![](http://www.easyicon.net/api/resize_png_new.php?id=1097043&size=32) plan  
 ====
 
-静态的项目排期模板基于Angular.js 
+静态的项目排期模板，基于Angular.js 
 
 ![main](https://raw.githubusercontent.com/hoosin/plan/master/assets/main.jpg)
-
 
 - **LIVE DEMO:** [http://hoosin.github.io/plan](http://hoosin.github.io/plan)
 
