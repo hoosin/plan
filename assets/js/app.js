@@ -51,6 +51,44 @@ function project($scope) {
 
 }
 
+function editor() {
+
+	if (localStorage.cheat==undefined) {
+		$('#Jtext p').show();	
+	} else if(localStorage.cheat!=undefined){
+		$('#Jtext').html(localStorage.cheat);
+	};
+
+	var txt=$('#Jtext').html();
+
+	$('#Jeditor').click(function() {
+		if ($('#Jtext').html()=='<p style="display: block;">快来贴上你的备忘吧...</p>') {
+			$('#Jinput textarea').text('');
+		} else{
+			$('#Jinput textarea').text(txt);
+		};
+		$('#Jinput').show();
+		go();
+	})
+
+} editor()
+
+function go() {
+	$('#Jcancel').click(function() {
+		$('#Jinput').hide();
+	})
+	$('#Jset').click(function() {
+		if ($('#Jinput textarea').val()=='') {
+			alert('写点什么吧，万一忘记了呢？')
+		} else{
+			$('#Jtext').html($('#Jinput textarea').val());
+			localStorage.cheat=$('#Jinput textarea').val();
+			$('#Jinput').hide();
+		};
+	})
+}
+
+
 // js main
 window.onload = function() {
 	var dl = document.getElementsByClassName('demoLink'),

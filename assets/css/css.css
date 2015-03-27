@@ -48,11 +48,24 @@ ul, ol,dd,dt,dl,p{ padding: 0px; margin: 0px; }
 /* info */
 .info { padding: 1.5em; background-color: #FFF; border: 1px solid #999; border-top: none; font-family: '宋体'}
 .info .button-group { display: block; margin: 0 auto; padding: 4px; height: 40px; text-align: center; border-bottom: none; }
-.info .button-container { text-align: center; }
+.info .button-container { text-align: center;}
 
 
 
 /* foot */
 .foot { padding: 1em; color: #999; }
 .foot a { color: #999; text-decoration: none; }
+
+/*cheat*/
+.cup{cursor: pointer;}
+.cheat{position: fixed; right: 2em; bottom: 2em; width: 300px; height: 200px; background: #B8B75A; padding: 30px 10px 10px; z-index: 99}
+.cheat:before{color: #fff;  content: "备忘录";display: block; position: absolute;left: 50%;margin-left: -20px;   top:5px;}
+.cheat:hover .editor{display: block;}
+.cheat .editor,
+.cheat .input-mod{position: absolute;}
+.cheat .editor{color: red; font-size: 12px; right: 5px; bottom: 5px; display: none;}
+.cheat .input-mod{width: 295px;  left: 10px; bottom: 25px; display: none;}
+.cheat .input{width: 100%; height: 100px;}
+.cheat .text{color: #000; padding: 10px 0; font:normal 14px/18px "Microsoft YaHei"; height: 140px; overflow: hidden;}
+.cheat .text p{text-align: center; line-height: 20px; color: red; display: none;}
 
