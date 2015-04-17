@@ -1,4 +1,4 @@
-body { margin: 1em; line-height: 1.5em; font-size: 16px; color: #666; background-color: #BBB; font:normal 16px/1.5em "Microsoft YaHei"}
+body { margin: 1.5em; line-height: 1.5em; font-size: 16px; color: #666; background-color: #BBB; font:normal 16px/1.5em "Microsoft YaHei"}
 a { color: #069; }
 h1,h2,h3{ color: #000}
 h1 { margin: 0; font-size: 2em; line-height: 2em; }
@@ -48,13 +48,15 @@ ul, ol,dd,dt,dl,p{ padding: 0px; margin: 0px; }
 /* info */
 .info { padding: 1.5em; background-color: #FFF; border: 1px solid #999; border-top: none; font-family: '宋体'}
 .info .button-group { display: block; margin: 0 auto; padding: 4px; height: 40px; text-align: center; border-bottom: none; }
-.info .button-container { text-align: center;}
+.info .button-container { text-align: center; }
 
 
 
 /* foot */
 .foot { padding: 1em; color: #999; }
 .foot a { color: #999; text-decoration: none; }
+
+
 
 /*cheat*/
 .cup{cursor: pointer;}
