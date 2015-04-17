@@ -51,7 +51,6 @@ function project($scope) {
 
 }
 
-<<<<<<< HEAD
 function editor() {
 
 	if (localStorage.cheat==undefined) {
@@ -109,8 +108,6 @@ function browserRedirect() {
 browserRedirect();
 
 
-=======
->>>>>>> c47be8d265d7d8fd4b5adc168a3838c00ebfeec2
 // js main
 window.onload = function() {
 	var dl = document.getElementsByClassName('demoLink'),
