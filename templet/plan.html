@@ -1,0 +1,210 @@
+<div ng-controller="HomePageCtrl" >
+	<!-- 		
+	<div id="Jcheat" class="cheat">
+	<div class="text" id="Jtext">
+		<p>快来贴上你的备忘吧...</p>
+	</div>
+	<span id="Jeditor" class="editor cup">编辑</span>
+	<div id="Jinput" class="input-mod">
+
+		<textarea class="input"></textarea>
+		<span id="Jset" class="status-icon done cup">贴上</span>
+		<span id="Jcancel" class="status-icon nopass cup">放弃</span>
+	</div>
+</div>
+-->
+<div class="container">
+	<div class="head">
+		<div class="middle">
+			<h1>
+				<span class="control">{{setMsg.project}}</span>
+			</h1>
+			<div class="status layout-mtb8">
+				<dl class="clearfix">
+					<dt class="strong">状态说明：</dt>
+					<dd>
+						<span class="status-icon done">已完成</span>
+					</dd>
+					<dd>
+						<span class="status-icon dont">未开始</span>
+					</dd>
+					<dd>
+						<span class="status-icon doing">进行中</span>
+					</dd>
+					<dd>
+						<span class="status-icon nopass">未确认</span>
+					</dd>
+					<dd>
+						<span class="status-icon affirm">已确认</span>
+					</dd>
+				</dl>
+			</div>
+
+			<div class="layout-mtb8">
+				<ul class="team clearfix">
+					<li>
+						<span class="strong">产品跟进</span>
+						：
+						<span class="control">{{setMsg.pm}}</span>
+					</li>
+					<li>
+						<span class="strong">前端跟进</span>
+						：
+						<span class="control">{{setMsg.f2e}}</span>
+					</li>
+					<li>
+						<span class="strong">视觉跟进</span>
+						：
+						<span class="control">{{setMsg.designer}}</span>
+					</li>
+					<li>
+						<span class="strong">协调跟进</span>
+						：
+						<span class="control">{{setMsg.coordinator}}</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="layout-mtb8">
+				<span class="strong">视觉进度</span>
+				：
+				<a class="demoLink" href="{{setMsg.designerPlan}}" target="_blank">点击</a>
+			</div>
+
+			<div class="layout-mtb8">
+				<span class="strong">前端注意事项：</span>
+				<p>
+					<span class="red">
+						项目用的编码是
+						<span class="control">{{setMsg.charsetMsg}}</span>
+					</span>
+				</p>
+				<p>
+					图片上传路径：
+					<code class="control">{{setMsg.picUrl}}</code>
+				</p>
+				<p>
+					样式表路径：
+					<code class="control">{{setMsg.cssUrl}}</code>
+				</p>
+				<p>
+					背景PSD路径：
+					<code class="control">{{setMsg.psdUrl}}</code>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="info">
+		<div class="middle">
+			<h2 class="control">{{itemTit[0].title}}</h2>
+			<div ng-repeat="item in items1">
+				<div class="dont-box">
+					[
+					<span>
+						{{item.stime}} ~~ {{item.etime}}
+						<span stime="{{item.stime}}" etime="{{item.etime}}" class="Jtime"></span>
+					</span>
+					] |
+					<span class="strong">{{item.pageName}}</span>
+					[{{item.author}}]
+					<span class="demo">
+						[
+						<a class="demoLink"  target="_blank" href="{{item.demo}}">预览</a>
+						]
+					</span>
+					<span class="online">
+						[
+						<a class="demoLink"  target="_blank" href="{{item.online}}">线上链接</a>
+						]
+					</span>
+					<span class="status-icon {{item.statu}}"> <em class="y">已完成</em> <em class="j">进行中</em>
+						<em class="w">未开始</em>
+						<em class="n">未确认</em>
+						<em class="p">已确认</em>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="middle">
+			<h2 class="control">{{itemTit[1].title}}</h2>
+			<div ng-repeat="item in items2">
+				<div class="dont-box">
+					[
+					<span>
+						{{item.stime}} ~~ {{item.etime}}
+						<span stime="{{item.stime}}" etime="{{item.etime}}" class="Jtime"></span>
+					</span>
+					] |
+					<span class="strong">{{item.pageName}}</span>
+					[{{item.author}}]
+					<span class="demo">
+						[
+						<a class="demoLink"  target="_blank" href="{{item.demo}}">预览</a>
+						]
+					</span>
+					<span class="online">
+						[
+						<a class="demoLink"  target="_blank" href="{{item.online}}">线上链接</a>
+						]
+					</span>
+					<span class="status-icon {{item.statu}}">
+						<em class="y">已完成</em>
+						<em class="j">进行中</em>
+						<em class="w">未开始</em>
+						<em class="n">未确认</em>
+						<em class="p">已确认</em>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="middle">
+			<h2 class="control">{{itemTit[2].title}}</h2>
+			<div ng-repeat="item in items3">
+				<div class="dont-box">
+					[
+					<span>
+						{{item.stime}} ~~ {{item.etime}}
+						<span stime="{{item.stime}}" etime="{{item.etime}}" class="Jtime"></span>
+					</span>
+					] |
+					<span class="strong">{{item.pageName}}</span>
+					[{{item.author}}]
+					<span class="demo">
+						[
+						<a class="demoLink"  target="_blank" href="{{item.demo}}">预览</a>
+						]
+					</span>
+					<span class="online">
+						[
+						<a class="demoLink"  target="_blank" href="{{item.online}}">线上链接</a>
+						]
+					</span>
+					<span class="status-icon {{item.statu}}">
+						<em class="y">已完成</em>
+						<em class="j">进行中</em>
+						<em class="w">未开始</em>
+						<em class="n">未确认</em>
+						<em class="p">已确认</em>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="importance middle" >
+			<p class="red">
+				相关备忘数据：
+				<span class="control">{{setMsg.footMsg}}</span>
+			</p>
+		</div>
+	</div>
+
+	<div class="foot">
+		<div class="middle">
+			©
+			<a href="https://github.com/hoosin/plan">angular plan</a>
+		</div>
+	</div>
+</div>
+</div>
