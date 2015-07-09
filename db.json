@@ -1,0 +1,101 @@
+// Javascript document
+{
+    "code": 200,
+    "msg": "OK",
+    "data": {
+        "goodStock": {
+            "buyNumMax": 2,
+            "buyNumMin": 1,
+            "gid": 163980,
+            "ptype": 0,
+            "sizes": [
+                {
+                    "sizeId": 526,
+                    "sn": "CESHI",
+                    "name": "S",
+                    "stock": 11,
+                    "saled": 0,
+                    "type": 0,
+                    "ptype": 0
+                },
+                {
+                    "sizeId": 1526,
+                    "sn": "CESHI",
+                    "name": "",
+                    "stock": 11,
+                    "saled": 0,
+                    "type": 0,
+                    "ptype": 0
+                }
+            ],
+            "totalSaled": 0,
+            "totalStock": 11,
+            "type": 0
+        },
+        "goods": {
+            "agio": "10.0折",
+            "categoryId": 7477,
+            "deliveryTime": 5,
+            "descriptions": [
+                {
+                    "name": "商品名称:",
+                    "value": "莱菲经典养颜组"
+                },
+                {
+                    "name": "备注:",
+                    "value": "包装方式:有包装无塑封"
+                }
+            ],
+            "detailImage": [
+                "http://a.vpimg2.com/upload/merchandise/421878/DPRM-6902457424528-110_2.jpg"
+            ],
+            "discount": 1,
+            "favoriate": false,
+            "hiTao": false,
+            "largeImage": [
+                "http://a.vpimg2.com/upload/merchandise/421878/DPRM-6902457424528-110.jpg"
+            ],
+            "makeUp": true,
+            "marketPrice": 0,
+            "middleImage": [
+                "http://a.vpimg2.com/upload/merchandise/421878/DPRM-6902457424528-110.jpg"
+            ],
+            "name": "莱菲经典养颜组",
+            "offShelf": true,
+            "pmsList": [
+                {
+                    "msg": "我是活动提示信息",
+                    "type": "买赠",
+                    "typeId": "1"
+                },
+                {
+                    "msg": "满200减100",
+                    "type": "满减",
+                    "typeId": "2"
+                },
+                {
+                    "msg": "满300打8折",
+                    "type": "折扣",
+                    "typeId": "3"
+                },
+                {
+                    "msg": "满99元免邮",
+                    "type": "免邮",
+                    "typeId": "4"
+                }
+            ],
+            "pointDescribe": "高丝十年经典，百万好评，超高性价比。锁住水分，守护肌肤不干燥，多重滋养，细纹一扫而光！",
+            "preSell": false,
+            "saleOut": false,
+            "sizeTableHtml": "<!DOCTYPE html>\n<head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <meta name=\"viewport\" content=\"initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0\">\n        <meta content=\"yes\" name=\"apple-mobile-web-app-capable\">\n            <meta content=\"black\" name=\"apple-mobile-web-app-status-bar-style\">\n                <meta content=\"telephone=no\" name=\"format-detection\">\n                    <!-- {if $show_uc} -->\n                    <meta name=\"apple-itunes-app\" content=\"app-id=417200582\"/>\n                    <link rel=\"apple-touch-icon-precomposed\" sizes=\"57x57\" href=\"themes/touch/images/common/touch-icon.png\" />\n                    <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"themes/touch/images/common/touch-icon.png\" />\n                </head>\n                <head>\n                    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n                    <style>*{ padding:0; border:0; margin:0 auto;}.fontred{ color:#F9339B}.alcenter{ text-align:center;}#wap_Size_data{margin:5px auto; font-size:12px; width:310px; word-break:break-all; }.tab_size{ margin:10px 0; width:500px;}.wap_size_tab {border: 1px solid #CCCACC; border-collapse: collapse;margin: 0; text-align:center; font-size:11px; }.wap_size_tab {border-collapse: collapse;}.wap_size_tab td,.wap_size_tab th { background-color: #FDFDFE;    border: 1px solid #CCCACC;    color: #807E80;    height: 22px;    line-height: 22px;    padding: 5px 10px;}.wap_size_tab th{ background:#E5E3E6; color:#333;}</style>\n                </head>\n                <body>\n                    <div id=\"wap_Size_data\">\n                        <div>\n                            <table class=\"pro-size-tab\" mars_sead_hover=\"shop_detail_assistant_view1\">\n                                <thead>\n                                    <tr class=\"J-size-tr pro-size-tab-bg-a\">\n                                        <td>尺码</td>\n                                        <td>号型</td>\n                                        <td>肩宽</td>\n                                        <td>胸围</td>\n                                        <td>衣长</td>\n                                        <td>袖长</td>\n                                    </tr>\n                                </thead>\n                                <tbody>\n                                    <tr>\n                                        <td>XS</td>\n                                        <td>150/76A</td>\n                                        <td>32.8</td>\n                                        <td>85.5</td>\n                                        <td>61</td>\n                                        <td>/</td>\n                                    </tr>\n                                    <tr>\n                                        <td>S</td>\n                                        <td>155/80A</td>\n                                        <td>33.6</td>\n                                        <td>88.5</td>\n                                        <td>63.5</td>\n                                        <td>/</td>\n                                    </tr>\n                                    <tr>\n                                        <td>M</td>\n                                        <td>160/84A</td>\n                                        <td>34.4</td>\n                                        <td>91.5</td>\n                                        <td>65</td>\n                                        <td>/</td>\n                                    </tr>\n                                    <tr>\n                                        <td>L</td>\n                                        <td>165/88A</td>\n                                        <td>35.3</td>\n                                        <td>95.5</td>\n                                        <td>66.5</td>\n                                        <td>/</td>\n                                    </tr>\n                                    <tr>\n                                        <td>XL</td>\n                                        <td>170/92A</td>\n                                        <td>36.2</td>\n                                        <td>99.5</td>\n                                        <td>68</td>\n                                        <td>/</td>\n                                    </tr>\n                                    <tr>\n                                        <td colspan=\"6\" class=\"tag tag02\">\n                                            <font class=\"light-red\">温馨提示：</font>\n                                        </td>\n                                    </tr>\n                                </tbody>\n                            </table>\n                            <p>\n                                <span>参考尺寸图：</span>\n                                <label>标准图</label>\n                            </p>\n                            <p>\n                                <img  id=\"sizePicUrl\" src=\"http://sp.vipshop.com/upload/merchandise/chima/new_sy.jpg\"/>\n                            </p>\n                        </div>\n                    </div>\n                </body>\n            </html>",
+            "smallImage": [
+                "http://a.vpimg2.com/upload/merchandise/421878/DPRM-6902457424528-110.jpg"
+            ],
+            "subStances": true,
+            "targetDeliveryDate": 1435216304,
+            "vendorProductId": 2478181911597302000,
+            "vipshopPrice": 0,
+            "weight": 0
+        }
+    }
+}
