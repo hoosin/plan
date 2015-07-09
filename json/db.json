@@ -1,0 +1,40 @@
+{
+	"code":100,
+	"msg":"success",
+  "data": {
+    "topMsg":
+      {
+        "project":"DMJ项目",
+		"pm": "胡俊琼 杜建荣",
+		"f2e":"白舜",
+		"designer":"李德武",
+		"designerPlan":"http://192.168.50.78/2014.07/jcz/plan.html",
+		"coordinator":"黄丽玲",
+		"charsetMsg":"UTF-8",
+		"picUrl":"2014/test/images/",
+		"cssUrl":"svn/data/2014/test/",
+		"psdUrl":"svn/test/psd/", 
+		"footMsg":"在前端开发时切勿忘记 test监测标识、统计代码"
+      },
+    "itemTit":[
+		{"title":"第一期"},
+		{"title":"第二期"},
+		{"title":"第三期"}
+		],
+
+	"plan":[{
+			"plan1":[{"author":"authors[0]","stime":"2014-09-30","etime":"2014-10-01","pageName":"首页","demo":"http://www.qq.com/","online":"","statu":"done"},
+		{"author":"authors[0]","stime":"2014-03-28","etime":"2014-10-09","pageName":"首页","demo":"http://www.qq.com/","online":"","statu":"dont"},
+		{"author":"authors[1]","stime":"2014-05-28","etime":"2014-10-09","pageName":"首页","demo":"http://www.qq.com/","online":"","statu":"doing"},
+		{"author":"authors[0]","stime":"2014-08-28","etime":"2014-10-09","pageName":"首页","demo":"http://www.qq.com/","online":"","statu":"nopass"},
+		{"author":"authors[0]","stime":"2014-07-28","etime":"2014-10-09","pageName":"首页","demo":"http://www.qq.com/","online":"","statu":"affirm"},
+		{"author":"authors[2]","stime":"2014-06-28","etime":"2014-10-09","pageName":"首页","demo":"http://www.qq.com/","online":"","statu":"none"}],
+		"plan2":[{"author":"authors[0]","stime":"2014-10-03","etime":"2014-10-08","pageName":"首页","demo":"http://www.qq.com/","online":"","statu":"done"},
+		{"author":"authors[0]","stime":"2014-09-28","etime":"2014-10-09","pageName":"首页","demo":"http://www.qq.com/","online":"","statu":"done"}],
+		"plan3":[{"author":"authors[0]","stime":"2014-09-30","etime":"2014-10-01","pageName":"首页","demo":"http://www.qq.com/","online":"","statu":"done"},
+		{"author":"authors[0]","stime":"2014-10-28","etime":"2014-10-31","pageName":"首页","demo":"http://www.qq.com/","online":"","statu":"done"}]
+			
+		}]
+
+  }
+}

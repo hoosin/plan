@@ -1,4 +1,4 @@
-var includeModuleArr=['ngRoute','homePage.service', 'homePage.controller',];
+var includeModuleArr=['ngRoute','homePage.service', 'homePage.controller'];
 
 angular.module('myApp',includeModuleArr)
 
