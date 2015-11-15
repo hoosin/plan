@@ -1,0 +1,23 @@
+{
+  "name": "plan",
+  "version": "1.0.0",
+  "description": "![](http://www.easyicon.net/api/resize_png_new.php?id=1097043&size=24) plan   ====",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoosin/plan.git"
+  },
+  "author": "hoosin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hoosin/plan/issues"
+  },
+  "homepage": "https://github.com/hoosin/plan#readme",
+  "dependencies": {
+    "angular": "^1.4.7",
+    "angular-route": "^1.4.7"
+  }
+}
