@@ -2,16 +2,16 @@
 
 angular.module('homePage.service', [])
 
-.factory('homePageDb', function($http) { 
+.factory('homePageDb', function($http) {
 
-    var mainInfo = $http.get('../../plan/json/db.json').success(function(response) {
-        return response.data;
+    var mainInfo = $http.get('../../plan/json/db.json').then(response => {
+        return response;
     });
 
     var db = {};
 
-    db.getMainInfo = function() { 
-        return mainInfo; 
+    db.getMainInfo = function() {
+        return mainInfo;
     };
 
     return db;
